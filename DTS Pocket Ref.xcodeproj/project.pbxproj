@@ -52,7 +52,6 @@
 		6EF4609A1CEAB73B002C628D /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF460991CEAB73B002C628D /* detailViewController.swift */; };
 		6EF4609C1CEBE579002C628D /* TOCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF4609B1CEBE579002C628D /* TOCTableViewCell.swift */; };
 		6EFE76751CF692F0002EAE09 /* ACCSRSAllocation.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EFE76741CF692F0002EAE09 /* ACCSRSAllocation.html */; };
-		6EFE76771CF695A7002EAE09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFE76761CF695A7002EAE09 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,7 +123,6 @@
 		6EF460991CEAB73B002C628D /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		6EF4609B1CEBE579002C628D /* TOCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOCTableViewCell.swift; sourceTree = "<group>"; };
 		6EFE76741CF692F0002EAE09 /* ACCSRSAllocation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ACCSRSAllocation.html; sourceTree = "<group>"; };
-		6EFE76761CF695A7002EAE09 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,7 +179,6 @@
 				6E74D1CF1CE9778B001BF575 /* FirstViewController.swift */,
 				6E74D1D11CE9778B001BF575 /* SecondViewController.swift */,
 				6E74D1D31CE9778B001BF575 /* Main.storyboard */,
-				6EFE76761CF695A7002EAE09 /* LaunchScreen.storyboard */,
 				6EC3424C1CED49BD00DA3B15 /* diskTabbedIconExp.png */,
 				6EF4609B1CEBE579002C628D /* TOCTableViewCell.swift */,
 				6EF460971CEAB647002C628D /* TOCViewController.swift */,
@@ -310,6 +307,7 @@
 				TargetAttributes = {
 					6E74D1C91CE97789001BF575 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9G62DD8NR2;
 					};
 					6E74D1DF1CE9778D001BF575 = {
 						CreatedOnToolsVersion = 7.3;
@@ -377,7 +375,6 @@
 				6EC342381CECB17300DA3B15 /* DFSMShsmTapeNames.html in Resources */,
 				6EC342341CECB17300DA3B15 /* DatasetLimits.html in Resources */,
 				6EC3423E1CECB17300DA3B15 /* JulianNonLeap.html in Resources */,
-				6EFE76771CF695A7002EAE09 /* LaunchScreen.storyboard in Resources */,
 				6EC342401CECB17300DA3B15 /* Products.html in Resources */,
 				6EC3424F1CED4D5000DA3B15 /* home-7.png in Resources */,
 				6EC3423A1CECB17300DA3B15 /* EXPDTConventions.html in Resources */,
@@ -557,10 +554,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "DTS Pocket Ref/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DTSSoftware.Darren.DTS-Pocket-Ref";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -568,10 +568,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "DTS Pocket Ref/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DTSSoftware.Darren.DTS-Pocket-Ref";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
