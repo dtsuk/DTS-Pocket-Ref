@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E74D1CE1CE9778B001BF575 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E74D1CD1CE9778A001BF575 /* AppDelegate.swift */; };
+		6E74D1D01CE9778B001BF575 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E74D1CF1CE9778B001BF575 /* FirstViewController.swift */; };
+		6E74D1D21CE9778B001BF575 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E74D1D11CE9778B001BF575 /* SecondViewController.swift */; };
+		6E74D1D51CE9778B001BF575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E74D1D31CE9778B001BF575 /* Main.storyboard */; };
+		6E74D1D71CE9778C001BF575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E74D1D61CE9778C001BF575 /* Assets.xcassets */; };
+		6E74D1DA1CE9778C001BF575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E74D1D81CE9778C001BF575 /* LaunchScreen.storyboard */; };
+		6E74D1E51CE9778E001BF575 /* DTS_Pocket_RefTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E74D1E41CE9778E001BF575 /* DTS_Pocket_RefTests.swift */; };
+		6E74D1F01CE9778F001BF575 /* DTS_Pocket_RefUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E74D1EF1CE9778F001BF575 /* DTS_Pocket_RefUITests.swift */; };
+		6EC3422D1CECB17300DA3B15 /* APARResolution.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342161CECB17200DA3B15 /* APARResolution.html */; };
+		6EC3422E1CECB17300DA3B15 /* APARStatus.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342171CECB17200DA3B15 /* APARStatus.html */; };
+		6EC3422F1CECB17300DA3B15 /* AutoClass.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342181CECB17200DA3B15 /* AutoClass.html */; };
+		6EC342301CECB17300DA3B15 /* Blocksizes.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342191CECB17200DA3B15 /* Blocksizes.html */; };
+		6EC342311CECB17300DA3B15 /* CommonErrors.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3421A1CECB17200DA3B15 /* CommonErrors.html */; };
+		6EC342321CECB17300DA3B15 /* ConsoleCommands.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3421B1CECB17200DA3B15 /* ConsoleCommands.html */; };
+		6EC342331CECB17300DA3B15 /* DASDInfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3421C1CECB17200DA3B15 /* DASDInfo.html */; };
+		6EC342341CECB17300DA3B15 /* DatasetLimits.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3421D1CECB17200DA3B15 /* DatasetLimits.html */; };
+		6EC342351CECB17300DA3B15 /* DatasetNames.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3421E1CECB17200DA3B15 /* DatasetNames.html */; };
+		6EC342361CECB17300DA3B15 /* DFSMSdssInfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3421F1CECB17200DA3B15 /* DFSMSdssInfo.html */; };
+		6EC342371CECB17300DA3B15 /* DFSMShsmInfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342201CECB17200DA3B15 /* DFSMShsmInfo.html */; };
+		6EC342381CECB17300DA3B15 /* DFSMShsmTapeNames.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342211CECB17200DA3B15 /* DFSMShsmTapeNames.html */; };
+		6EC342391CECB17300DA3B15 /* EBCDIC2Hex.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342221CECB17200DA3B15 /* EBCDIC2Hex.html */; };
+		6EC3423A1CECB17300DA3B15 /* EXPDTConventions.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342231CECB17200DA3B15 /* EXPDTConventions.html */; };
+		6EC3423B1CECB17300DA3B15 /* FDRABRInfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342241CECB17200DA3B15 /* FDRABRInfo.html */; };
+		6EC3423C1CECB17300DA3B15 /* GeneralPurposeRegister.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342251CECB17200DA3B15 /* GeneralPurposeRegister.html */; };
+		6EC3423D1CECB17300DA3B15 /* JulianLeap.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342261CECB17200DA3B15 /* JulianLeap.html */; };
+		6EC3423E1CECB17300DA3B15 /* JulianNonLeap.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342271CECB17200DA3B15 /* JulianNonLeap.html */; };
+		6EC3423F1CECB17300DA3B15 /* MountVolume.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342281CECB17200DA3B15 /* MountVolume.html */; };
+		6EC342401CECB17300DA3B15 /* Products.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342291CECB17200DA3B15 /* Products.html */; };
+		6EC342411CECB17300DA3B15 /* PTFClosingCodes.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3422A1CECB17200DA3B15 /* PTFClosingCodes.html */; };
+		6EC342421CECB17300DA3B15 /* RACFInfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3422B1CECB17200DA3B15 /* RACFInfo.html */; };
+		6EC342431CECB17300DA3B15 /* SYS1_ParmlibMems.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3422C1CECB17200DA3B15 /* SYS1_ParmlibMems.html */; };
+		6EC342481CECB1A100DA3B15 /* TapeLabel.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342441CECB1A100DA3B15 /* TapeLabel.html */; };
+		6EC342491CECB1A100DA3B15 /* TSOCommsForDFSMShsm.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342451CECB1A100DA3B15 /* TSOCommsForDFSMShsm.html */; };
+		6EC3424A1CECB1A100DA3B15 /* VolumeMounts.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342461CECB1A100DA3B15 /* VolumeMounts.html */; };
+		6EC3424B1CECB1A100DA3B15 /* VSAM_IDCAMSInfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342471CECB1A100DA3B15 /* VSAM_IDCAMSInfo.html */; };
+		6EC3424D1CED49BD00DA3B15 /* diskTabbedIconExp.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3424C1CED49BD00DA3B15 /* diskTabbedIconExp.png */; };
+		6EC3424F1CED4D5000DA3B15 /* home-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EC3424E1CED4D5000DA3B15 /* home-7.png */; };
+		6EC342511CED4DA000DA3B15 /* filing-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EC342501CED4DA000DA3B15 /* filing-7.png */; };
+		6EF460581CEAA070002C628D /* pocketRefData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF460571CEAA070002C628D /* pocketRefData.swift */; };
+		6EF460891CEAAF6D002C628D /* images in Resources */ = {isa = PBXBuildFile; fileRef = 6EF4606B1CEAAF6D002C628D /* images */; };
+		6EF460951CEAAF6D002C628D /* zOSReferenceCover.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EF460771CEAAF6D002C628D /* zOSReferenceCover.png */; };
+		6EF460981CEAB647002C628D /* TOCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF460971CEAB647002C628D /* TOCViewController.swift */; };
+		6EF4609A1CEAB73B002C628D /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF460991CEAB73B002C628D /* detailViewController.swift */; };
+		6EF4609C1CEBE579002C628D /* TOCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF4609B1CEBE579002C628D /* TOCTableViewCell.swift */; };
+		6EFE76751CF692F0002EAE09 /* ACCSRSAllocation.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EFE76741CF692F0002EAE09 /* ACCSRSAllocation.html */; };
+		6EFE76771CF695A7002EAE09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFE76761CF695A7002EAE09 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E74D1E11CE9778D001BF575 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E74D1C21CE97789001BF575 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E74D1C91CE97789001BF575;
+			remoteInfo = "DTS Pocket Ref";
+		};
+		6E74D1EC1CE9778F001BF575 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E74D1C21CE97789001BF575 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E74D1C91CE97789001BF575;
+			remoteInfo = "DTS Pocket Ref";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E74D1CA1CE97789001BF575 /* DTS Pocket Ref.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DTS Pocket Ref.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E74D1CD1CE9778A001BF575 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E74D1CF1CE9778B001BF575 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		6E74D1D11CE9778B001BF575 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		6E74D1D41CE9778B001BF575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E74D1D61CE9778C001BF575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E74D1D91CE9778C001BF575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E74D1DB1CE9778D001BF575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E74D1E01CE9778D001BF575 /* DTS Pocket RefTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DTS Pocket RefTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E74D1E41CE9778E001BF575 /* DTS_Pocket_RefTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTS_Pocket_RefTests.swift; sourceTree = "<group>"; };
+		6E74D1E61CE9778E001BF575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E74D1EB1CE9778F001BF575 /* DTS Pocket RefUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DTS Pocket RefUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E74D1EF1CE9778F001BF575 /* DTS_Pocket_RefUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTS_Pocket_RefUITests.swift; sourceTree = "<group>"; };
+		6E74D1F11CE9778F001BF575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EC342161CECB17200DA3B15 /* APARResolution.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = APARResolution.html; sourceTree = "<group>"; };
+		6EC342171CECB17200DA3B15 /* APARStatus.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = APARStatus.html; sourceTree = "<group>"; };
+		6EC342181CECB17200DA3B15 /* AutoClass.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = AutoClass.html; sourceTree = "<group>"; };
+		6EC342191CECB17200DA3B15 /* Blocksizes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Blocksizes.html; sourceTree = "<group>"; };
+		6EC3421A1CECB17200DA3B15 /* CommonErrors.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = CommonErrors.html; sourceTree = "<group>"; };
+		6EC3421B1CECB17200DA3B15 /* ConsoleCommands.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ConsoleCommands.html; sourceTree = "<group>"; };
+		6EC3421C1CECB17200DA3B15 /* DASDInfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = DASDInfo.html; sourceTree = "<group>"; };
+		6EC3421D1CECB17200DA3B15 /* DatasetLimits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = DatasetLimits.html; sourceTree = "<group>"; };
+		6EC3421E1CECB17200DA3B15 /* DatasetNames.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = DatasetNames.html; sourceTree = "<group>"; };
+		6EC3421F1CECB17200DA3B15 /* DFSMSdssInfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = DFSMSdssInfo.html; sourceTree = "<group>"; };
+		6EC342201CECB17200DA3B15 /* DFSMShsmInfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = DFSMShsmInfo.html; sourceTree = "<group>"; };
+		6EC342211CECB17200DA3B15 /* DFSMShsmTapeNames.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = DFSMShsmTapeNames.html; sourceTree = "<group>"; };
+		6EC342221CECB17200DA3B15 /* EBCDIC2Hex.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = EBCDIC2Hex.html; sourceTree = "<group>"; };
+		6EC342231CECB17200DA3B15 /* EXPDTConventions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = EXPDTConventions.html; sourceTree = "<group>"; };
+		6EC342241CECB17200DA3B15 /* FDRABRInfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FDRABRInfo.html; sourceTree = "<group>"; };
+		6EC342251CECB17200DA3B15 /* GeneralPurposeRegister.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = GeneralPurposeRegister.html; sourceTree = "<group>"; };
+		6EC342261CECB17200DA3B15 /* JulianLeap.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JulianLeap.html; sourceTree = "<group>"; };
+		6EC342271CECB17200DA3B15 /* JulianNonLeap.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JulianNonLeap.html; sourceTree = "<group>"; };
+		6EC342281CECB17200DA3B15 /* MountVolume.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MountVolume.html; sourceTree = "<group>"; };
+		6EC342291CECB17200DA3B15 /* Products.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Products.html; sourceTree = "<group>"; };
+		6EC3422A1CECB17200DA3B15 /* PTFClosingCodes.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = PTFClosingCodes.html; sourceTree = "<group>"; };
+		6EC3422B1CECB17200DA3B15 /* RACFInfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RACFInfo.html; sourceTree = "<group>"; };
+		6EC3422C1CECB17200DA3B15 /* SYS1_ParmlibMems.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = SYS1_ParmlibMems.html; sourceTree = "<group>"; };
+		6EC342441CECB1A100DA3B15 /* TapeLabel.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TapeLabel.html; sourceTree = "<group>"; };
+		6EC342451CECB1A100DA3B15 /* TSOCommsForDFSMShsm.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TSOCommsForDFSMShsm.html; sourceTree = "<group>"; };
+		6EC342461CECB1A100DA3B15 /* VolumeMounts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = VolumeMounts.html; sourceTree = "<group>"; };
+		6EC342471CECB1A100DA3B15 /* VSAM_IDCAMSInfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = VSAM_IDCAMSInfo.html; sourceTree = "<group>"; };
+		6EC3424C1CED49BD00DA3B15 /* diskTabbedIconExp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diskTabbedIconExp.png; sourceTree = "<group>"; };
+		6EC3424E1CED4D5000DA3B15 /* home-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-7.png"; sourceTree = "<group>"; };
+		6EC342501CED4DA000DA3B15 /* filing-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filing-7.png"; sourceTree = "<group>"; };
+		6EF460571CEAA070002C628D /* pocketRefData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pocketRefData.swift; sourceTree = "<group>"; };
+		6EF4606B1CEAAF6D002C628D /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../images; sourceTree = "<group>"; };
+		6EF460771CEAAF6D002C628D /* zOSReferenceCover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zOSReferenceCover.png; sourceTree = "<group>"; };
+		6EF460971CEAB647002C628D /* TOCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOCViewController.swift; sourceTree = "<group>"; };
+		6EF460991CEAB73B002C628D /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		6EF4609B1CEBE579002C628D /* TOCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOCTableViewCell.swift; sourceTree = "<group>"; };
+		6EFE76741CF692F0002EAE09 /* ACCSRSAllocation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ACCSRSAllocation.html; sourceTree = "<group>"; };
+		6EFE76761CF695A7002EAE09 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E74D1C71CE97789001BF575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E74D1DD1CE9778D001BF575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E74D1E81CE9778E001BF575 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E74D1C11CE97788001BF575 = {
+			isa = PBXGroup;
+			children = (
+				6EF460771CEAAF6D002C628D /* zOSReferenceCover.png */,
+				6EF460571CEAA070002C628D /* pocketRefData.swift */,
+				6E74D1CC1CE9778A001BF575 /* DTS Pocket Ref */,
+				6E74D1E31CE9778D001BF575 /* DTS Pocket RefTests */,
+				6E74D1EE1CE9778F001BF575 /* DTS Pocket RefUITests */,
+				6E74D1CB1CE97789001BF575 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E74D1CB1CE97789001BF575 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E74D1CA1CE97789001BF575 /* DTS Pocket Ref.app */,
+				6E74D1E01CE9778D001BF575 /* DTS Pocket RefTests.xctest */,
+				6E74D1EB1CE9778F001BF575 /* DTS Pocket RefUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E74D1CC1CE9778A001BF575 /* DTS Pocket Ref */ = {
+			isa = PBXGroup;
+			children = (
+				6E74D1CD1CE9778A001BF575 /* AppDelegate.swift */,
+				6E74D1CF1CE9778B001BF575 /* FirstViewController.swift */,
+				6E74D1D11CE9778B001BF575 /* SecondViewController.swift */,
+				6E74D1D31CE9778B001BF575 /* Main.storyboard */,
+				6EFE76761CF695A7002EAE09 /* LaunchScreen.storyboard */,
+				6EC3424C1CED49BD00DA3B15 /* diskTabbedIconExp.png */,
+				6EF4609B1CEBE579002C628D /* TOCTableViewCell.swift */,
+				6EF460971CEAB647002C628D /* TOCViewController.swift */,
+				6EF460991CEAB73B002C628D /* detailViewController.swift */,
+				6E74D1D61CE9778C001BF575 /* Assets.xcassets */,
+				6E74D1D81CE9778C001BF575 /* LaunchScreen.storyboard */,
+				6E74D1DB1CE9778D001BF575 /* Info.plist */,
+				6EFE76741CF692F0002EAE09 /* ACCSRSAllocation.html */,
+				6EC342161CECB17200DA3B15 /* APARResolution.html */,
+				6EC342171CECB17200DA3B15 /* APARStatus.html */,
+				6EC342181CECB17200DA3B15 /* AutoClass.html */,
+				6EC342191CECB17200DA3B15 /* Blocksizes.html */,
+				6EC3421A1CECB17200DA3B15 /* CommonErrors.html */,
+				6EC3421B1CECB17200DA3B15 /* ConsoleCommands.html */,
+				6EC3421C1CECB17200DA3B15 /* DASDInfo.html */,
+				6EC3421D1CECB17200DA3B15 /* DatasetLimits.html */,
+				6EC3421E1CECB17200DA3B15 /* DatasetNames.html */,
+				6EC3421F1CECB17200DA3B15 /* DFSMSdssInfo.html */,
+				6EC342201CECB17200DA3B15 /* DFSMShsmInfo.html */,
+				6EC342211CECB17200DA3B15 /* DFSMShsmTapeNames.html */,
+				6EC342221CECB17200DA3B15 /* EBCDIC2Hex.html */,
+				6EC342231CECB17200DA3B15 /* EXPDTConventions.html */,
+				6EC342241CECB17200DA3B15 /* FDRABRInfo.html */,
+				6EC342251CECB17200DA3B15 /* GeneralPurposeRegister.html */,
+				6EC342261CECB17200DA3B15 /* JulianLeap.html */,
+				6EC342271CECB17200DA3B15 /* JulianNonLeap.html */,
+				6EC342281CECB17200DA3B15 /* MountVolume.html */,
+				6EC342291CECB17200DA3B15 /* Products.html */,
+				6EC3422A1CECB17200DA3B15 /* PTFClosingCodes.html */,
+				6EC3422B1CECB17200DA3B15 /* RACFInfo.html */,
+				6EC3422C1CECB17200DA3B15 /* SYS1_ParmlibMems.html */,
+				6EC342441CECB1A100DA3B15 /* TapeLabel.html */,
+				6EC342451CECB1A100DA3B15 /* TSOCommsForDFSMShsm.html */,
+				6EC342461CECB1A100DA3B15 /* VolumeMounts.html */,
+				6EC342471CECB1A100DA3B15 /* VSAM_IDCAMSInfo.html */,
+				6EC342501CED4DA000DA3B15 /* filing-7.png */,
+				6EC3424E1CED4D5000DA3B15 /* home-7.png */,
+				6EF4606B1CEAAF6D002C628D /* images */,
+			);
+			path = "DTS Pocket Ref";
+			sourceTree = "<group>";
+		};
+		6E74D1E31CE9778D001BF575 /* DTS Pocket RefTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E74D1E41CE9778E001BF575 /* DTS_Pocket_RefTests.swift */,
+				6E74D1E61CE9778E001BF575 /* Info.plist */,
+			);
+			path = "DTS Pocket RefTests";
+			sourceTree = "<group>";
+		};
+		6E74D1EE1CE9778F001BF575 /* DTS Pocket RefUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E74D1EF1CE9778F001BF575 /* DTS_Pocket_RefUITests.swift */,
+				6E74D1F11CE9778F001BF575 /* Info.plist */,
+			);
+			path = "DTS Pocket RefUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E74D1C91CE97789001BF575 /* DTS Pocket Ref */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E74D1F41CE9778F001BF575 /* Build configuration list for PBXNativeTarget "DTS Pocket Ref" */;
+			buildPhases = (
+				6E74D1C61CE97789001BF575 /* Sources */,
+				6E74D1C71CE97789001BF575 /* Frameworks */,
+				6E74D1C81CE97789001BF575 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DTS Pocket Ref";
+			productName = "DTS Pocket Ref";
+			productReference = 6E74D1CA1CE97789001BF575 /* DTS Pocket Ref.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E74D1DF1CE9778D001BF575 /* DTS Pocket RefTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E74D1F71CE9778F001BF575 /* Build configuration list for PBXNativeTarget "DTS Pocket RefTests" */;
+			buildPhases = (
+				6E74D1DC1CE9778D001BF575 /* Sources */,
+				6E74D1DD1CE9778D001BF575 /* Frameworks */,
+				6E74D1DE1CE9778D001BF575 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E74D1E21CE9778D001BF575 /* PBXTargetDependency */,
+			);
+			name = "DTS Pocket RefTests";
+			productName = "DTS Pocket RefTests";
+			productReference = 6E74D1E01CE9778D001BF575 /* DTS Pocket RefTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E74D1EA1CE9778E001BF575 /* DTS Pocket RefUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E74D1FA1CE9778F001BF575 /* Build configuration list for PBXNativeTarget "DTS Pocket RefUITests" */;
+			buildPhases = (
+				6E74D1E71CE9778E001BF575 /* Sources */,
+				6E74D1E81CE9778E001BF575 /* Frameworks */,
+				6E74D1E91CE9778E001BF575 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E74D1ED1CE9778F001BF575 /* PBXTargetDependency */,
+			);
+			name = "DTS Pocket RefUITests";
+			productName = "DTS Pocket RefUITests";
+			productReference = 6E74D1EB1CE9778F001BF575 /* DTS Pocket RefUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E74D1C21CE97789001BF575 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "DTS Software";
+				TargetAttributes = {
+					6E74D1C91CE97789001BF575 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					6E74D1DF1CE9778D001BF575 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 6E74D1C91CE97789001BF575;
+					};
+					6E74D1EA1CE9778E001BF575 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 6E74D1C91CE97789001BF575;
+					};
+				};
+			};
+			buildConfigurationList = 6E74D1C51CE97789001BF575 /* Build configuration list for PBXProject "DTS Pocket Ref" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E74D1C11CE97788001BF575;
+			productRefGroup = 6E74D1CB1CE97789001BF575 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E74D1C91CE97789001BF575 /* DTS Pocket Ref */,
+				6E74D1DF1CE9778D001BF575 /* DTS Pocket RefTests */,
+				6E74D1EA1CE9778E001BF575 /* DTS Pocket RefUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E74D1C81CE97789001BF575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF460891CEAAF6D002C628D /* images in Resources */,
+				6EC342321CECB17300DA3B15 /* ConsoleCommands.html in Resources */,
+				6EC3423D1CECB17300DA3B15 /* JulianLeap.html in Resources */,
+				6EC3422D1CECB17300DA3B15 /* APARResolution.html in Resources */,
+				6E74D1DA1CE9778C001BF575 /* LaunchScreen.storyboard in Resources */,
+				6EC342411CECB17300DA3B15 /* PTFClosingCodes.html in Resources */,
+				6EC342391CECB17300DA3B15 /* EBCDIC2Hex.html in Resources */,
+				6EC3424A1CECB1A100DA3B15 /* VolumeMounts.html in Resources */,
+				6EC3423B1CECB17300DA3B15 /* FDRABRInfo.html in Resources */,
+				6EC342491CECB1A100DA3B15 /* TSOCommsForDFSMShsm.html in Resources */,
+				6EC3424B1CECB1A100DA3B15 /* VSAM_IDCAMSInfo.html in Resources */,
+				6EC342351CECB17300DA3B15 /* DatasetNames.html in Resources */,
+				6E74D1D71CE9778C001BF575 /* Assets.xcassets in Resources */,
+				6EC342431CECB17300DA3B15 /* SYS1_ParmlibMems.html in Resources */,
+				6EC3423C1CECB17300DA3B15 /* GeneralPurposeRegister.html in Resources */,
+				6EC342511CED4DA000DA3B15 /* filing-7.png in Resources */,
+				6EC3422F1CECB17300DA3B15 /* AutoClass.html in Resources */,
+				6EC342481CECB1A100DA3B15 /* TapeLabel.html in Resources */,
+				6EC3423F1CECB17300DA3B15 /* MountVolume.html in Resources */,
+				6EC342301CECB17300DA3B15 /* Blocksizes.html in Resources */,
+				6EC3424D1CED49BD00DA3B15 /* diskTabbedIconExp.png in Resources */,
+				6EF460951CEAAF6D002C628D /* zOSReferenceCover.png in Resources */,
+				6EC342331CECB17300DA3B15 /* DASDInfo.html in Resources */,
+				6EC342311CECB17300DA3B15 /* CommonErrors.html in Resources */,
+				6EC3422E1CECB17300DA3B15 /* APARStatus.html in Resources */,
+				6EFE76751CF692F0002EAE09 /* ACCSRSAllocation.html in Resources */,
+				6E74D1D51CE9778B001BF575 /* Main.storyboard in Resources */,
+				6EC342421CECB17300DA3B15 /* RACFInfo.html in Resources */,
+				6EC342381CECB17300DA3B15 /* DFSMShsmTapeNames.html in Resources */,
+				6EC342341CECB17300DA3B15 /* DatasetLimits.html in Resources */,
+				6EC3423E1CECB17300DA3B15 /* JulianNonLeap.html in Resources */,
+				6EFE76771CF695A7002EAE09 /* LaunchScreen.storyboard in Resources */,
+				6EC342401CECB17300DA3B15 /* Products.html in Resources */,
+				6EC3424F1CED4D5000DA3B15 /* home-7.png in Resources */,
+				6EC3423A1CECB17300DA3B15 /* EXPDTConventions.html in Resources */,
+				6EC342371CECB17300DA3B15 /* DFSMShsmInfo.html in Resources */,
+				6EC342361CECB17300DA3B15 /* DFSMSdssInfo.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E74D1DE1CE9778D001BF575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E74D1E91CE9778E001BF575 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E74D1C61CE97789001BF575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF4609C1CEBE579002C628D /* TOCTableViewCell.swift in Sources */,
+				6E74D1D21CE9778B001BF575 /* SecondViewController.swift in Sources */,
+				6E74D1CE1CE9778B001BF575 /* AppDelegate.swift in Sources */,
+				6E74D1D01CE9778B001BF575 /* FirstViewController.swift in Sources */,
+				6EF460981CEAB647002C628D /* TOCViewController.swift in Sources */,
+				6EF460581CEAA070002C628D /* pocketRefData.swift in Sources */,
+				6EF4609A1CEAB73B002C628D /* detailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E74D1DC1CE9778D001BF575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E74D1E51CE9778E001BF575 /* DTS_Pocket_RefTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E74D1E71CE9778E001BF575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E74D1F01CE9778F001BF575 /* DTS_Pocket_RefUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E74D1E21CE9778D001BF575 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E74D1C91CE97789001BF575 /* DTS Pocket Ref */;
+			targetProxy = 6E74D1E11CE9778D001BF575 /* PBXContainerItemProxy */;
+		};
+		6E74D1ED1CE9778F001BF575 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E74D1C91CE97789001BF575 /* DTS Pocket Ref */;
+			targetProxy = 6E74D1EC1CE9778F001BF575 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E74D1D31CE9778B001BF575 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E74D1D41CE9778B001BF575 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E74D1D81CE9778C001BF575 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E74D1D91CE9778C001BF575 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E74D1F21CE9778F001BF575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E74D1F31CE9778F001BF575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E74D1F51CE9778F001BF575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "DTS Pocket Ref/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DTSSoftware.Darren.DTS-Pocket-Ref";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6E74D1F61CE9778F001BF575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "DTS Pocket Ref/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DTSSoftware.Darren.DTS-Pocket-Ref";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6E74D1F81CE9778F001BF575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "DTS Pocket RefTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DTSSoftware.Darren.DTS-Pocket-RefTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DTS Pocket Ref.app/DTS Pocket Ref";
+			};
+			name = Debug;
+		};
+		6E74D1F91CE9778F001BF575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "DTS Pocket RefTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DTSSoftware.Darren.DTS-Pocket-RefTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DTS Pocket Ref.app/DTS Pocket Ref";
+			};
+			name = Release;
+		};
+		6E74D1FB1CE9778F001BF575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DTS Pocket RefUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DTSSoftware.Darren.DTS-Pocket-RefUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "DTS Pocket Ref";
+			};
+			name = Debug;
+		};
+		6E74D1FC1CE9778F001BF575 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "DTS Pocket RefUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DTSSoftware.Darren.DTS-Pocket-RefUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "DTS Pocket Ref";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E74D1C51CE97789001BF575 /* Build configuration list for PBXProject "DTS Pocket Ref" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E74D1F21CE9778F001BF575 /* Debug */,
+				6E74D1F31CE9778F001BF575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E74D1F41CE9778F001BF575 /* Build configuration list for PBXNativeTarget "DTS Pocket Ref" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E74D1F51CE9778F001BF575 /* Debug */,
+				6E74D1F61CE9778F001BF575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E74D1F71CE9778F001BF575 /* Build configuration list for PBXNativeTarget "DTS Pocket RefTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E74D1F81CE9778F001BF575 /* Debug */,
+				6E74D1F91CE9778F001BF575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E74D1FA1CE9778F001BF575 /* Build configuration list for PBXNativeTarget "DTS Pocket RefUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E74D1FB1CE9778F001BF575 /* Debug */,
+				6E74D1FC1CE9778F001BF575 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E74D1C21CE97789001BF575 /* Project object */;
+}
