@@ -28,76 +28,88 @@
 <h1>RACF Information</h1>
 <p class="code">
 <h2>Allow Access to a RACF Resource</h2>
-PERMIT  profile-name &nbsp; ACCESS(access-type)<br/>
-&nbsp;CLASS(class-name)   ID(userid)<br/>
+<p class="code">
+PERMIT profile-name ACCESS(access-type)<br/>
+&nbsp;CLASS(class-name) ID(userid)<br/>
 <br/>
 </p>
 <p>&nbsp;</p>
 
 <h2>Find all DSNs for a Profile</h2>
-LD &nbsp; DA('profile') &nbsp; ALL  DSNS<br/>
+<p class="code">
+LD DA('profile') ALL DSNS<br/>
 <br/>
 </p>
 <p>&nbsp;</p>
 
 <h2>Find all Profiles for a User</h2>
-LD &nbsp; ID(userid)<br/>
+<p class="code">
+LD ID(userid)<br/>
 </p>
 <p>&nbsp;</p>
 
 <br/>
 <h2>List Profile Information (even if Generic exists)</h2>
-LD &nbsp; DA('dsname') &nbsp; GENERIC<br/>
+<p class="code">
+LD DA('dsname') GENERIC<br/>
 <br/>
 </p>
 <p>&nbsp;</p>
 
 <h2>List Group Information</h2>
-LG &nbsp; group-name &nbsp; DFP<br/>
+<p class="code">
+LG group-name DFP<br/>
 <br/>
 </p>
 <p>&nbsp;</p>
 
 <h2>List User attributes</h2>
-LU &nbsp; (user1,user2,user3) &nbsp;&nbsp;&nbsp;  DFP &nbsp;&nbsp;&nbsp; TSO<br/>
+<p class="code">
+LU (user1,user2,user3) DFP TSO<br/>
 <br/>
 </p>
 <p>&nbsp;</p>
 
 <h2>Change a User Password</h2>
-PW &nbsp; PASSWORD(current &nbsp; new) &nbsp; USER(userid)<br/>
+<p class="code">
+PW PASSWORD(current new) USER(userid)<br/>
 <br/>
 </p>
 <p>&nbsp;</p>
 
 <h2>Reset a User Password to Default Group</h2>
-PW &nbsp; USER(userid)<br/>
+<p class="code">
+PW USER(userid)<br/>
 <br/>
 </p>
 <p>&nbsp;</p>
 
 <h2>Delete Access to a Tape Volume</h2>
-PERMIT &nbsp; tapevolser &nbsp; CLASS(TAPEVOL) &nbsp; USER(userid) &nbsp; DELETE<br/>
+<p class="code">
+PERMIT tapevolser CLASS(TAPEVOL) USER(userid) DELETE<br/>
 </p>
 <p>&nbsp;</p><br/>
 
 <h2>Add a Generic Profile</h2>
-ADDSD &nbsp; 'hlq.qual2.*' &nbsp; UACC(access-type)<br/>
+<p class="code">
+ADDSD 'hlq.qual2.*' UACC(access-type)<br/>
 <br/>
 </p>
 <p>&nbsp;</p>
 
 <h2>Restrict use of a Storage Class</h2>
-SETROPTS &nbsp; CLASSACT(STORCLAS)  &nbsp;  RACLIST(STORCLAS)<br/>
-RDEFINE  STORCLASS &nbsp; storclas-name &nbsp; UACC(NONE)<br/>
-PERMIT &nbsp; storclas-name  &nbsp; CLASS(STORCLAS) &nbsp;  -<br/>
-ID(userID)  ACCESS(READ)<br/>
-SETROPTS &nbsp; REFRESH &nbsp; RACLIST(STORCLAS)<br/>
+<p class="code">
+SETROPTS CLASSACT(STORCLAS) RACLIST(STORCLAS)<br/>
+RDEFINE STORCLASS storclas-name UACC(NONE)<br/>
+PERMIT storclas-name CLASS(STORCLAS) -<br/>
+&nbsp;&nbsp;ID(userID) ACCESS(READ)<br/>
+SETROPTS REFRESH RACLIST(STORCLAS)<br/>
 <br/>
 </p>
 <p>&nbsp;</p>
 
 <h2>DFSMSdss Facility Class Profiles</h2>
+<p class="code">
 STGADMIN.ADR.COPY.BYPASSACS<br/>
 STGADMIN.ADR.RESTORE.BYPASSACS<br/>
 STGADMIN.ADR.CGCREATE<br/>
@@ -129,6 +141,7 @@ STGADMIN.ADR.RESTORE.TOLERATE.ENQF<br/>
 </p>
 <p>&nbsp;</p>
 <h2>ABARS Facility Class Profiles</h2>
+<p class="code">
 STGADMIN.ARC.ABACKUP<br/>
 STGADMIN.ARC.ABACKUP.agname<br/>
 STGADMIN.ARC.ARECOVER<br/>
@@ -138,6 +151,7 @@ STGADMIN.ARC.ARECOVER.agname.REPLACE<br/>
 </p>
 <p>&nbsp;</p>
 <h2>IDCAMS Facility Class Profiles</h2>
+<p class="code">
 STGADMIN.IDC.BINDDATA<br/>
 STGADMIN.IDC.DCOLLECT<br/>
 STGADMIN.IDC.DIAGNOSE.CATALOG<br/>
@@ -154,6 +168,7 @@ STGADMIN.IDC.SETCACHE.SUBSYSTEM<br/>
 </p>
 <p>&nbsp;</p>
 <h2>STORAGE ADMIN CMD Keyword Profiles</h2>
+<p class="code">
 STGADMIN.DPDSRN.olddsname<br/>
 STGADMIN.IFG.READVTOC.volser<br/>
 STGADMIN.IGD.ACTIVATE.CONFIGURATION<br/>
@@ -173,8 +188,9 @@ STGADMIN.IGWSHCDS.REPAIR<br/>
 <br/>
 </p>
 <p>&nbsp;</p>
-<p class="code">
+
 <h2>DFSMSrmm Facility Class Profiles</h2>
+<p class="code">
 STGADMIN.EDG.ACTIONS.action<br/>
 STGADMIN.EDG.AV.status.volser<br/>
 STGADMIN.EDG.CD.COPYFROM.dsname<br/>
@@ -204,6 +220,7 @@ STGADMIN.EDG.INERS.WRONGLABEL<br/>
 </p>
 <p>&nbsp;</p>
 <h2>OTHER RACF Resources</h2>
+<p class="code">
 <table cellpadding="15" cellspacing="0"><tr>
 <td><strong>Class</strong></td>
 <td><strong>Resource Name</strong></td></tr>

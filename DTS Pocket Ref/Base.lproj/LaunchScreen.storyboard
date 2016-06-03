@@ -17,19 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DTS_Logo_watermark.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="WHf-FH-7dT">
-                                <rect key="frame" x="185" y="203" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DTS_Logo_watermark.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="p05-wv-Qt4">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="JpQ-yw-C1V"/>
+                                    <constraint firstAttribute="width" constant="240" id="Hr0-P5-p0s"/>
+                                    <constraint firstAttribute="height" constant="128" id="qrI-sP-zJX"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WHf-FH-7dT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="185" id="FUm-e7-1a7"/>
-                            <constraint firstItem="WHf-FH-7dT" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="183" id="N80-lr-UAQ"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="WHf-FH-7dT" secondAttribute="bottom" constant="269" id="Yfi-Vo-CgP"/>
+                            <constraint firstItem="p05-wv-Qt4" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Atl-iN-GWt"/>
+                            <constraint firstItem="p05-wv-Qt4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UOj-LM-bUp"/>
                         </constraints>
                     </view>
                 </viewController>

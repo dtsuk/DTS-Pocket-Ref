@@ -34,16 +34,16 @@ DELETE  dsname  NOSCRATCH<br/>
 <h2>DFSMSHSM ADDVOL COMMAND</h2>
 <p class="code">
 ADDVOL     volser  UNIT(unit)  BACKUP  (bkup-parms)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DUMP 	(dump-parms)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MIGRATION  (mig-parms)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRIMARY  (prim-parms)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DUMP 	(dump-parms)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MIGRATION  (mig-parms)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRIMARY  (prim-parms)<br/>
 </p>
 <p>&nbsp;</p>
 <strong>Options for BACKUP Volumes</strong><br/>
 DAILY(n)  |  SPILL 	THRESHOLD(nnn)<br/>
 <p>&nbsp;</p>
 <strong>Options for DUMP Volumes</strong><br/>
-DUMPCLASS(class)   DENSITY(2|3|4)<br/>
+DUMPCLASS(class)   DENSITY(2 | 3 | 4)<br/>
 <p>&nbsp;</p>
 <strong>Options for MIGRATION Volumes</strong><br/>
 <table cellspacing="0" cellpadding="15">
@@ -61,7 +61,7 @@ AUTOBACKUP	|   NOAUTOBACKUP <br/>
 AUTODUMP(class)  |   NOAUTODUMP<br/> 
 AUTOMIGRATION	|   NOAUTOMIGRATION <br/>
 AUTORECALL	|  NO   AUTORECALL <br/>
-BACKUPDEVICECATEGORY(TAPE|DASD|NONE)<br/> 
+BACKUPDEVICECATEGORY(TAPE | DASD | NONE)<br/> 
 MIGRATE(days) 	|  DELETEBYAGE(days)   | DELETEIFBACKEDUP(days)<br/>
 THRESHOLD(hi low)<br/>
 TRACKMANAGEDTHRESHOLD(hi low)<br/>

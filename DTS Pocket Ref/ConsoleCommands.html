@@ -61,55 +61,75 @@ D  SMS,  ACTIVE<br/>
 ,VOLUME(volume)<br/>
 
 <h2>Display Subsystem Information</h2>
-
+<p class="code">
 D  OPDATA,PREFIX-display   subsytem  command  prefixes<br/>
 D  SSI,  LIST,  ALL&lt;,  SUB=sname&gt;-display  subsytems  info<br/>
+</p>
 
 <h2>Automatically Allocate System Dump Datasets</h2>
-
+<p class="code">
 DUMPDS  NAME=name   pattern<br/>
-(default=SYS1.DUMP.D&YYMMDD..T&HHMMSS..&SYSNAME..S&SEQ.)<br/>
+(default=SYS1.DUMP.D&amp;YYMMDD..T&amp;HHMMSS..&amp;SYSNAME..S&amp;SEQ.)<br/>
 DUMPDS ALLOC=ACTIVE   |  INACTIVE<br/>
 DUMPDS  ADD,SMS=((S=storclas,M=mgmtclas,D=dataclas))<br/>
 &nbsp;&nbsp;or<br/>
 DUMPDS ADD,VOL=(volser   list)<br/>
 &nbsp;&nbsp;or<br/>
 DUMPDS  ADD,DSN=(nn,nn,nn-nn...)   (for  non-auto  alloc)<br/>
+</p>
 
 <h2>Activate an SMS Configuration</h2> 
+<p class="code">
 SETSMS  SAVEACDS(backup.acds) <br/>
 SETSMS  SCDS(scds)<br/   &lt;ACDS(acds)&gt;<br/>
+</p>
+
 <em>The current ACDS should be saved to a backup ACDS before activating a new configuration. Specifying the ACDS operand will cause the named ACDS to be overlaid with the SCDS contents.</em><br/>
 
 <h2>Copy an SCDS to an ACDS without Activation</h2>
+<p class="code">
 SETSMS  COPYSCDS(scdsname,acdsname)<br/>
+</p>
 
 <h2>Display / Alter Volume and Storgrp Status</h2>
+<p class="code">
 D  SMS,VOL(vvvvvv)<br/>
 D  SMS,SG(storgrp),[LISTVOL]<br/>
 VARY  SMS,SG(storgrp)  ,ENABLE VOL(volser),QUIESCE[,NEW]
 ,DISABLE[,NEW]<br/>
+</p>
+
 
 <h2>Display Linklist, LPA, APF Libraries, Dynamic Exits</h2>
+<p class="code">
 D  PROG,LNKLST<br/>
 D  PROG,LPA[,MODNAME=modname]<br/>
 D  PROG,APF<br/>
 D  PROG,EXIT,EXITNAME=exitname<br/>
 &nbsp;&nbsp;[,MODNAME=modname][,DIAG]<br/>
+</p>
 
 <h2>Add Dataset to Linklist</h2>
-SETPROG  LNKLST,DEFINE,NAME=listname,COPYFROM=CURRENT SETPROG<br/>  &nbsp;&nbsp;LNKLST,ADD,name=listname,DSNAME=dsn, 
+<p class="code">
+SETPROG  LNKLST,DEFINE,NAME=listname,COPYFROM=CURRENT SETPROG<br/>  &nbsp;&nbsp;LNKLST,ADD,name=listname,DSNAME=dsn,
 &nbsp;&nbsp;ATTOP|ATBOTTOM|AFTER=dsn<br/>
 SETPROG  LNKLST,ACTIVATE,name=listname
+</p>
 
 <h2>Free a Linklisted Dataset</h2>
+<p class="code">
 STOP  LLA<br/>
 MODIFY  LNKLST,UNALLOCATE<br/>
+</p>
 
 <h2>APF-Authorize a Load Library</h2>
+<p class="code">
 SETPROG  APF,ADD,DSNAME=dsn,SMS   |  VOL=volser<br/>
+</p>
+
 
 <h2>SET SMS SUBSYSTEM  OPTIONS </h2>
+<p class="code">
 <em>Configuration Parameters</em> <br/>
 ACDS(dsname) AKP({nnn[,nnn[...,nnn]]   |1000}) <br/>
 BREAKPOINTVALUE   (0-65520)<br/>
@@ -137,73 +157,78 @@ SUPPRESS_SMSMSG({YES|NO,IGD17054I,IGD17227I,IGD17395I})<br/>
 Interval Parameters INTERVAL(nnn) DINTERVAL(nnn) DSSTIMEOUT(nnnn) CACHETIME(nnnnn) BMFTIME(nnnnn)<br/>
 DEADLOCK_DETECTION(iiii,kkkk) LRUCYCLES(cycles) LRUTIME(seconds)<br/>
 SMF_TIME(YES   or  NO)<br/>
+</p>
 
-<h2>CICSVR Option Parameters</h2> 
+<h2>CICSVR Option Parameters</h2>
+<p class="code">
 CICSVR_INIT(YES   or  NO) <br/>
 CICSVR_DSNAME_PREFIX(user_prefix)<br/> 
 CICSVR_RCDS_PREFIX(cicsvr_rcds_prefix)<br/> 
 CICSVR_ZZVALUE_PARM(zzvalue_string)<br/>
+</p>
 
 <h2>Trace and VOLSELMSG Option Parameters</h2> 
+<p class="code">
 TRACE  (ON  or   OFF) <br/>
 TYPE(ERROR|ALL[(TRACE|T|VOLSELMSG|V)[,ALL|ERROR(TR ACE|T|VOLSELMSG|V)]])<br/>
 VOLSELMSG(ON|OFF,0|nnnnn|ALL) JOBNAME(jobname|*[(TRACE|T|VOLSELMSG|V)[,job- name|*(TRACE|T|VOLSELMSG|V)]]) ASID(asid|*[(TRACE|T|VOLSELMSG|V)[,asid|*(TRACE|T| VOLSELMSG|V)]])<br/>
 STEPNAME(stepname|*) SELECT(option[,option]...) DESELECT(option[,option]...)<br/>
+</p>
 
 <h2>Display SMF Dataset Names</h2>
+<p class="code">
 D  SMF,S<br/>
+</p>
 
 <h2>Display SMF Options</h2>
+<p class="code">
 D  SMF,O<br/>
 Display Device Information<br/>
-DEVSERV  PATHS,devnum,nn,<ONLINE   |  OFFLINE> SMS<br/>
+DEVSERV  PATHS,devnum,nn,&lt;ONLINE   |  OFFLINE&gt; SMS<br/>
 
-DEVSERV  QDASD,devnum,<filters   and  options> QTAPE<br/>
+DEVSERV  QDASD,devnum,&lt;filters   and  options&gt; QTAPE<br/>
 
 DEVSERV  QDASD  |QTAPE,?  displays  syntax  details<br/>
 
 DEVSERV  QPAVS,devnum,&lt;VOLUME|UCB|UNBOX&gt;<br/>
+</p>
 
 <h2>Display System Configuration Info</h2>
+<p class="code">
 D  PARMLIB D  IPLINFO D  M=CPU<br/>
 M=DEVICE(devnum) M=CHP(channel   paths)<br/>
+</p>
 
 <h2>SMS AND OAM/LCS CONSOLE COMMANDS FOR SMS-MANAGED TAPE AND MANUAL TAPE LIBRARIES (MTL)</h2>
-<table>
+<p class="code">
+<table cellpadding="15" cellspacing="0">
 	<tr>
-		<th>DISPLAY  SMS,OAM</th><td>-  display  OAM  status</td>
+		<td><strong>DISPLAY&nbsp;SMS,OAM</strong></td><td>-  display  OAM  status</td>
+	</tr>
+	<tr><td><strong>DISPLAY&nbsp;SMS,LIBRARY<br/>&nbsp;(ALL),DETAIL</strong></td><td>-  display  library  status (ALL  or  selected  libraries)</td>
 	</tr>
 	<tr>
-		<th>DISPLAY  SMS,LIBRARY (ALL),DETAIL</th><td>-  display  library  status (ALL  or  selected  libraries)</td>
+		<td><strong>VARY SMS,LIBRARY<br/>&nbsp;(libname),ONLINE</strong></td><td>-  vary  a  library  online</td>
+	</tr>
+    <tr><td><strong>VARY SMS,LIBRARY<br/>&nbsp;(libname),OFFLINE</strong></td><td>-  vary  a  library  online</td>
 	</tr>
 	<tr>
-		<th>VARY  SMS,LIBRARY (libname),ONLINE</th><td>-  vary  a  library  online</td>
+		<td><strong>LIBRARY ENTER,volser,<br/>
+            &nbsp;libname,MEDIAn</strong></td><td>-  enter  a  tape  volume  into  a library <br/>(MEDIAtype  optional if a default data class is specified in library definition)</td>
 	</tr>
-	<tr>
-		<th>VARY  SMS,LIBRARY (libname),OFFLINE</th><td>-  vary  a  library  online</td>
-	</tr>
-	<tr>
-		<th></th>LIBRARY  ENTER,volser, libname,MEDIAn<td>-  enter  a  tape  volume  into  a library  (MEDIAtype  optionalif a default data class is specified in library definition)</td>
-	</tr>
-	<tr>
-		<th>LIBRARY  EJECT,volser, PURGE</th><td>-  eject  a  volume  (no  physical
-movement  from  an  MTL)</td>
-	</tr>
-	<tr>
-		<th>KEEP LOCATION
-LIBRARY  SETCL,
-deviceno, 	MEDIAn</th><td>-  set  default  media  type  for
-cartridge  loader</td>
-	</tr>
-	<tr>
-		<th>ANY</th><td>(ANY  applies  only  to  MTL)</td>
+	<tr><td><strong>LIBRARY  EJECT,volser, <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PURGE <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KEEP <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOCATION </strong></td><td>-  eject  a  volume  (no  physical movement  from  an  MTL)</td>
+    </tr>
+    <tr><td><strong>LIBRARY &nbsp;SETCL, <br/>
+        &nbsp;deviceno, MEDIAn<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ANY</strong></td><td>-  set  default  media  type  for cartridge  loader<br/> (ANY  applies  only  to  MTL)</td>
 	</tr>	
-	<tr>
-		<th>LIBRARY  DISPDRV, deviceno</th><td>-  display  tape  drive  status
-libraryname</td>
+	<tr><td><strong>LIBRARY&nbsp;DISPDRV, <br/>
+        &nbsp;deviceno</strong></td><td>-  display  tape  drive  status libraryname</td>
 	</tr>	
-	<tr>
-		<th>DISPLAY  SMS,VOL(volser)</th><td>-  display  tape  volume  status</td>
+	<tr><td><strong>DISPLAY&nbsp;SMS,VOL(volser)</strong></td><td>-  display  tape  volume  status</td>
 	</tr>
 </table>
 

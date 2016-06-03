@@ -22,44 +22,54 @@
 <img src="images/DTS_Logo_watermark.jpeg" style="border: 0px" />
 <br/>
 
+<p class="code">
 <h1>TSO COMMANDS  FOR DFSMSHSM</h1>
 
 <strong>Recall a Migrated Dataset</strong><br/>
-HRECALL(dsn)  WAIT|NOWAIT  EXTENDRC <br/>
-VOLUME(volser)   UNIT(type) <br/>
-DAOPTION(SAMETRK|RELTRK|RELBLK) <br/>
+HRECALL(dsn)  WAIT | NOWAIT  EXTENDRC <br/>
+&nbsp;&nbsp;&nbsp;VOLUME(volser)   UNIT(type) <br/>
+&nbsp;&nbsp;&nbsp;DAOPTION(SAMETRK | RELTRK | RELBLK) <br/>
 <p>&nbsp;</p>
 
 <strong>Recover a Dataset From Backup</strong><br/>
 HRECOVER(dsn)   GENERATION(nnnn)   NEWNAME(newn)<br/> 
 &nbsp;&nbsp;&nbsp;REPLACE  WAIT|NOWAIT  EXTENDRC<br/>
-&nbsp;&nbsp;&nbsp;DATE(date)  TIME(time)  VERSION(nnnn)  FROMVOLUME(vol)<br/> 
-&nbsp;&nbsp;&nbsp;TOVOLUME(vol)   UNIT(type) <br/>
-&nbsp;&nbsp;&nbsp;DAOPTION(SAMETRK|RELTRK|RELBLK)<br/>
+&nbsp;&nbsp;&nbsp;DATE(date)&nbsp;&nbsp;TIME(time)&nbsp;&nbsp;VERSION(nnnn)&nbsp;&nbsp;FROMVOLUME(vol)<br/>
+&nbsp;&nbsp;&nbsp;TOVOLUME(vol)&nbsp;&nbsp;UNIT(type) <br/>
+&nbsp;&nbsp;&nbsp;DAOPTION(SAMETRK | RELTRK | RELBLK)<br/>
 <p>&nbsp;</p>
 
 <strong>List BCDS and MCDS Information</strong><br/>
 
-HLIST  BVOL(volser)|PVOL|MVOL|ML1|ML2&lt;(DASD|TAPE)&gt;<br/> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VOLUME(volser)   BCDS|MCDS|BOTH<br/>
+HLIST BVOL(volser)|PVOL|MVOL|ML1|ML2&lt;(DASD|TAPE)&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VOLUME(volser)&nbsp;&nbsp;BCDS | MCDS | BOTH<br/>
 <br/>
-HLIST  DSNAME(dsn)|LEVEL(qual) BCDS|MCDS|BOTH<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUMMARY INCLUDEPRIMARY SELECT(AGE(min,max))<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ML1|ML2) (VOLUME(volser)) RETAINDAYS<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACTIVE SDSP|NOSDSP VSAM<br/>
+HLIST DSNAME(dsn)|LEVEL(qual)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCDS|MCDS|BOTH<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUMMARY<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INCLUDEPRIMARY<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT(AGE(min,max))<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ML1|ML2)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(VOLUME(volser))<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RETAINDAYS<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACTIVE<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SDSP | NOSDSP<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VSAM<br/>
 <br/>
 HLIST  USER(userid)<br/>
 <br/>
-HLIST  parms  TERMINAL|OUTDATASET(dsn)|SYSOUT(class)
+HLIST  parms  TERMINAL | OUTDATASET(dsn) | SYSOUT(class)
 <p>&nbsp;</p>
 <strong>Delete Backup Versions</strong><br/>
-HBDELETE  (dsn,  dsn...)  ALL  |  DATE(date)  TIME(time)| VERSIONS(nnn,nnn...)   FROMVOLUME(vol)<br/>
+HBDELETE&nbsp;(dsn,&nbsp;dsn&nbsp;...)  ALL  |  DATE(date)&nbsp;&nbsp;TIME(time) |<br/>
+&nbsp;&nbsp;VERSIONS(nnn,nnn...)&nbsp;&nbsp;FROMVOLUME(vol)<br/>
 <p>&nbsp;</p>
-<strong>Delete Migrated Datasets<strong><br/>
-HDELETE  (dsn,  dsn...)  PURGE  WAIT|NOWAIT  EXTENDRC<br/>
+<strong>Delete Migrated Datasets</strong><br/>
+HDELETE&nbsp;&nbsp;(dsn,&nbsp;&nbsp;dsn&nbsp;&nbsp;...)&nbsp;&nbsp;PURGE&nbsp;&nbsp;WAIT | NOWAIT&nbsp;&nbsp;EXTENDRC<br/>
 <p>&nbsp;</p>
 <strong>Issue Arbitrary DFSMShsm Commands</strong><br/>
-HSENDCMD  WAIT|NOWAIT  command<br/>
+HSENDCMD&nbsp;&nbsp;WAIT | NOWAIT&nbsp;&nbsp;command<br/>
+<br/>
 
 <em>The issuer of HSENDCMD must be a DFSMShsm-authorized user for any commands other than ALTERDS, BDELETE, and QUERY</em>
 
