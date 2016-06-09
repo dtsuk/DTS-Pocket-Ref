@@ -52,6 +52,7 @@
 		6EF4609A1CEAB73B002C628D /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF460991CEAB73B002C628D /* detailViewController.swift */; };
 		6EF4609C1CEBE579002C628D /* TOCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF4609B1CEBE579002C628D /* TOCTableViewCell.swift */; };
 		6EFE76751CF692F0002EAE09 /* ACCSRSAllocation.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EFE76741CF692F0002EAE09 /* ACCSRSAllocation.html */; };
+		9573F2B91D0873CF00D63533 /* LaunchScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9573F2B71D0873CF00D63533 /* LaunchScreen2.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		6EF460991CEAB73B002C628D /* detailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		6EF4609B1CEBE579002C628D /* TOCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TOCTableViewCell.swift; sourceTree = "<group>"; };
 		6EFE76741CF692F0002EAE09 /* ACCSRSAllocation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ACCSRSAllocation.html; sourceTree = "<group>"; };
+		9573F2B81D0873CF00D63533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen2.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				6EF460991CEAB73B002C628D /* detailViewController.swift */,
 				6E74D1D61CE9778C001BF575 /* Assets.xcassets */,
 				6E74D1D81CE9778C001BF575 /* LaunchScreen.storyboard */,
+				9573F2B71D0873CF00D63533 /* LaunchScreen2.storyboard */,
 				6E74D1DB1CE9778D001BF575 /* Info.plist */,
 				6EFE76741CF692F0002EAE09 /* ACCSRSAllocation.html */,
 				6EC342161CECB17200DA3B15 /* APARResolution.html */,
@@ -370,6 +373,7 @@
 				6EC342311CECB17300DA3B15 /* CommonErrors.html in Resources */,
 				6EC3422E1CECB17300DA3B15 /* APARStatus.html in Resources */,
 				6EFE76751CF692F0002EAE09 /* ACCSRSAllocation.html in Resources */,
+				9573F2B91D0873CF00D63533 /* LaunchScreen2.storyboard in Resources */,
 				6E74D1D51CE9778B001BF575 /* Main.storyboard in Resources */,
 				6EC342421CECB17300DA3B15 /* RACFInfo.html in Resources */,
 				6EC342381CECB17300DA3B15 /* DFSMShsmTapeNames.html in Resources */,
@@ -460,6 +464,14 @@
 				6E74D1D91CE9778C001BF575 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9573F2B71D0873CF00D63533 /* LaunchScreen2.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9573F2B81D0873CF00D63533 /* Base */,
+			);
+			name = LaunchScreen2.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

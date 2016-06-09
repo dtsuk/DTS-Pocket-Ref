@@ -27,48 +27,65 @@
 <h1>DFSMSHSM</h1>
 <h2> TAPE DATASET NAMING CONVENTION</h2>
 
+
 <strong>Backup to original</strong><br/>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.BACKTAPE.DATASET<br/>
+<p class="code">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.BACKTAPE.DATASET<br/></p>
+<p class="code">
 <strong>Backup to alternate</strong><br/>
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.copy.BACKTAPE.DATASET<br/>
+<p class="code">
 <strong>Migration to original</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.HMIGTAPE.DATASET<br/>
+<p class="code">
 <strong>Migration to alternate</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.COPY.HMIGTAPE.DATASET<br/>
+<p class="code">
 <strong>Dump</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.DMP.dumpclass.Vvolser.Dyyddd.Tssmmhh<br/> 
+<p class="code">
 <strong>Spill</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.BACKTAPE.DATASET<br/>
+<p class="code">
 <strong>Recycle Backup to original</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.BACKTAPE.DATASET<br/>
+<p class="code">
 <strong>Tape copy (backup)</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.COPY.BACKTAPE.DATASET<br/>
+<p class="code">
 <strong>Tape copy (migration)</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.COPY.HMIGTAPE.DATASET<br/>
+<p class="code">
 <strong>Recycle Backup to alternate</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.COPY.BACKTAPE.DATASET<br/>
+<p class="code">
 <strong>Recycle Migration to original</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.HMIGTAPE.DATASET<br/>
+<p class="code">
 <strong>Recycle Migration to Alternate</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix.COPY.HMIGTAPE.DATASET<br/>
+<p class="code">
 <strong>CDS Backup (DATAMOVER=HSM) </strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;uid.BCDS.BACKUP.Vnnnnnnn <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UID.MCDS.BACKUP.Vnnnnnnn <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UID.OCDS.BACKUP.Vnnnnnnn <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UID.JRNL.BACKUP.Vnnnnnnn<br/>
+<p class="code">
 <strong>CDS Backup (DATAMOVER=DSS) </strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UID.BCDS.BACKUP.Dnnnnnnn <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UID.MCDS.BACKUP.Dnnnnnnn <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UID.OCDS.BACKUP.Dnnnnnnn <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UID.JRNL.BACKUP.Dnnnnnnn<br/>
+<p class="code">
 <strong>ABARS Backup - control file</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outputdatasetprefix.C.CccVnnnn<br/>
+<p class="code">
 <strong>DFSMSdss data</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outputdatasetprefix.D.CccVnnnn<br/>
+<p class="code">
 <strong>Instruction file</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outputdatasetprefix.I.CccVnnnn<br/>
+<p class="code">
 <strong>'other' Mig and Tape file</strong><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outputdatasetprefix.O.CccVnnnn<br/>
 </p>
@@ -83,15 +100,20 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n=  copy  number  (1-9)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gggg=generation   number  (1-9999)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cc=cycle  number  (1-63)<br/><br/>
+</p>
 
 <strong>Archive Backup</strong><br/>
+<p class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FDRABR.Vvolser.bnyydddx <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b=identifier  (B,D-J) <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n=copy  number  (1-2) <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyddd  =  Julian  date<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x  =  occurrence  number  (A-Z,  0-9)<br/><br/>
+</p>
+
 
 <strong>Application Backup</strong><br/>
+<p class="code">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;abrindex.Vvolser.bnyydddx<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;abrindex  =  HLQ  of  Application  A.C.F<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;remainder  =  same  as  Archive  Backup<br/>
