@@ -30,7 +30,7 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>dtssoftware.com</key>
+			<key>www.dtssoftware.com</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<true/>

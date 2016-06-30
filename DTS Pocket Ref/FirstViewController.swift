@@ -16,7 +16,7 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let URL = NSURL(string: "http://www.dtssoftware.com/company_aboutdts.htm")
+        let URL = NSURL(string: "https://www.dtssoftware.com/company_aboutdts.htm")
         
         webView.loadRequest(NSURLRequest(URL: URL!))
         
